@@ -49,7 +49,7 @@
     <!--通知spring使用cglib而不是jdk的来生成代理方法 AOP可以拦截到Controller --> 
     <aop:aspectj-autoproxy proxy-target-class="true" />
   	<!-- 配置控制层异常处理 -->
-  	<bean class="com.yuanjun.aop.ExceptionAspect"/>
+  	<bean class="com.yuanjun.aop.exception.ExceptionAspect"/>
   	
   	<!-- 配置control切面bean -->
   	<bean class="com.yuanjun.aop.ControllerAspect" id="controllerAspect"></bean>
